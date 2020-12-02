@@ -22,3 +22,9 @@ To start the watcher
 screen -S watcher
 sudo python3 watcher.py
 ```
+
+To send emails for alerts, please update watcher.py's variables:
+```
+gmail_user = '[gmail address]'
+gmail_password = '[gmail password]'
+```
