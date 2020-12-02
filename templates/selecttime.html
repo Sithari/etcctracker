@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>ETCC Tracker</title>
+</head>
+<body>
+
+<form action="signup" method="POST">
+<h4> Here are the available time slots. Please select which you would like to be alerted on: </h4>
+    {% for key,value in mydata.items() %}
+
+    {% if value == "0 spaces" %}
+    <input type="radio" name=time value="{{key}}"/> {{key}}: {{value}}<br />
+    {% endif %}
+    {% if value != "0 spaces" %}
+    <input type="radio" disabled/> {{key}}: {{value}}<br />
+    {% endif %}
+    {% endfor %}
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ETCC Tracker</title>
+</head>
+<body>
+
+<form action="/getschedule" method="POST">
+    <h4> Enter date you would like to watch for opening(Must be in [year]-[month]-[day] format ex: 2020-11-30 </h4>
+    <input name="date">
+    <input type="submit" value="Submit">
+</form>
+
+<form action="/unsub" method="POST">
+    <h4> If you have already registered, please enter an email address to unsubscribe. </h4>
+    <input name="unsub">
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
